@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  merge_group:
+    types:
+      - checks_requested
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "done"
